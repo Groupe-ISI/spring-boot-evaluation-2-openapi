@@ -1,0 +1,17 @@
+.gitignore
+.openapi-generator-ignore
+README.md
+api.module.ts
+api/api.ts
+api/roleController.service.ts
+api/userController.service.ts
+configuration.ts
+encoder.ts
+git_push.sh
+index.ts
+model/appProduitDto.ts
+model/appRoleDto.ts
+model/appUserDto.ts
+model/models.ts
+param.ts
+variables.ts
