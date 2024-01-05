@@ -1,0 +1,107 @@
+paths:
+  /users:
+    get:
+      tags:
+        - user-controller
+      summary: List of users.
+      operationId: getAppUsers
+      parameters:
+        - $ref: '../../interfaces/global-api.yml#/components/parameters/currentPageParam'
+        - $ref: '../../interfaces/global-api.yml#/components/parameters/sizePageParam'
+      responses:
+        200:
+          description: SUCCESS
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '../../interfaces/global-api.yml#/components/schemas/AppUserDto'
+        204:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NoContent'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+    post:
+      tags:
+        - user-controller
+      summary: Create a user.
+      operationId: createAppUser
+      requestBody:
+        $ref: '../../interfaces/global-api.yml#/components/requestBodies/UserBody'
+      responses:
+        201:
+          $ref: '../../interfaces/global-api.yml#/components/responses/userCreatedResponse'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+  /user:
+    #Paramettre partagé pour tout les méthodes sous le path /user/{id}
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+          format: int32
+        required: true
+        description: The given user ID
+    get:
+      tags:
+        - user-controller
+      summary: Get a user by the given id.
+      operationId: getAppUser
+      responses:
+        200:
+          $ref: '../../interfaces/global-api.yml#/components/responses/GetUserOkResponse'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+    put:
+      tags:
+        - user-controller
+      summary: Update a role by the given id.
+      operationId: updateAppRole
+      requestBody:
+        $ref: '../../interfaces/global-api.yml#/components/requestBodies/RoleBody'
+      responses:
+        200:
+          $ref: '../../interfaces/global-api.yml#/components/responses/GetUserOkResponse'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+    delete:
+      tags:
+        - role-controller
+      summary: Delete a role by the given id.
+      operationId: deleteAppRole
+      responses:
+        204:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NoContent'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'

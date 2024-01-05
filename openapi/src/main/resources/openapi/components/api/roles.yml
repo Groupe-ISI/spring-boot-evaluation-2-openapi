@@ -1,0 +1,107 @@
+paths:
+  /roles:
+    get:
+      tags:
+        - role-controller
+      summary: List of the roles.
+      operationId: getAppRoles
+      parameters:
+        - $ref: '../../interfaces/global-api.yml#/components/parameters/currentPageParam'
+        - $ref: '../../interfaces/global-api.yml#/components/parameters/sizePageParam'
+      responses:
+        200:
+          description: SUCCESS
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '../../interfaces/global-api.yml#/components/schemas/AppRoleDto'
+        204:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NoContent'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+    post:
+      tags:
+        - role-controller
+      summary: Create a role.
+      operationId: createAppRole
+      requestBody:
+        $ref: '../../interfaces/global-api.yml#/components/requestBodies/RoleBody'
+      responses:
+        201:
+          $ref: '../../interfaces/global-api.yml#/components/responses/roleCreatedResponse'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+  /role:
+    # Parametre partagé...
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+          format: int32
+        required: true
+        description: The given role ID
+    get:
+      tags:
+        - role-controller
+      summary: Get a role by the given id.
+      operationId: getAppRole
+      responses:
+        200:
+          $ref: '../../interfaces/global-api.yml#/components/responses/GetRoleOkResponse'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+    put:
+      tags:
+        - role-controller
+      summary: Update a role by the given id.
+      operationId: updateAppRole
+      requestBody:
+        $ref: '../../interfaces/global-api.yml#/components/requestBodies/RoleBody'
+      responses:
+        200:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Ok'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
+    delete:
+      tags:
+        - role-controller
+      summary: Delete a role by the given id.
+      operationId: deleteAppRole
+      responses:
+        204:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NoContent'
+        400:
+          $ref: '../../interfaces/global-api.yml#/components/responses/BadRequest'
+        401:
+          $ref: '../../interfaces/global-api.yml#/components/responses/Unauthorized'
+        404:
+          $ref: '../../interfaces/global-api.yml#/components/responses/NotFound'
+        5XX:
+          $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'

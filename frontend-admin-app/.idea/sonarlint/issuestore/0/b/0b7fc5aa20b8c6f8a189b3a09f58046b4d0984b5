@@ -1,0 +1,27 @@
+
+Ntypescript:S1128"2Remove this unused import of 'COLLECTION_FORMATS'.(ç§õ
+†typescript:S66066"jPrefer using nullish coalescing operator (`??`) instead of a logical or (`||`), as it is a safer operator.(¯“˜¬
+utypescript:S3776D"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(µœµûÿÿÿÿ
+stypescript:S4325K"RThis assertion is unnecessary since it does not change the type of the expression.(Ö¿ªªøÿÿÿÿ
+stypescript:S4325N"RThis assertion is unnecessary since it does not change the type of the expression.(³Áõéûÿÿÿÿ
+wtypescript:S6582n"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(½êüé
+|typescript:S6582z"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(º“İùÿÿÿÿ
+Gtypescript:S4323‰"*Replace this union type with a type alias.(€ÓÙ
+Štypescript:S4165"mReview this redundant assignment: "responseType_" already holds the assigned value along all execution paths.(–ıù±
+ptypescript:S4782¨"NConsider removing 'undefined' type or '?' specifier, one of them is redundant.(¬õüøÿÿÿÿ
+ptypescript:S4782©"NConsider removing 'undefined' type or '?' specifier, one of them is redundant.(ŠÉšüÿÿÿÿ
+ptypescript:S4782ª"NConsider removing 'undefined' type or '?' specifier, one of them is redundant.(¾èµùÿÿÿÿ
+ktypescript:S4782«"NConsider removing 'undefined' type or '?' specifier, one of them is redundant.(“é´‡
+xtypescript:S6582²"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(½êüé
+}typescript:S6582½"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(º“İùÿÿÿÿ
+Štypescript:S4165È"mReview this redundant assignment: "responseType_" already holds the assigned value along all execution paths.(–ıù±
+xtypescript:S6582ë"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(½êüé
+}typescript:S6582÷"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(º“İùÿÿÿÿ
+Štypescript:S4165‚"mReview this redundant assignment: "responseType_" already holds the assigned value along all execution paths.(–ıù±
+qtypescript:S3776Ÿ"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(‡ˆöÎ
+xtypescript:S6582³"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(½êüé
+}typescript:S6582¿"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(º“İùÿÿÿÿ
+Štypescript:S4165Ê"mReview this redundant assignment: "responseType_" already holds the assigned value along all execution paths.(–ıù±
+xtypescript:S6582ò"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(½êüé
+}typescript:S6582ş"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(º“İùÿÿÿÿ
+Štypescript:S4165’"mReview this redundant assignment: "responseType_" already holds the assigned value along all execution paths.(–ıù±

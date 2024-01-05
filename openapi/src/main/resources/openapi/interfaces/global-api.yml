@@ -1,0 +1,334 @@
+openapi: 3.0.3
+
+info:
+  title: APIs de la gestion de stock.
+  version: 1.0.0
+  description: Microservice de gestion de stock avec AppRole, AppUser, et AppProduit...
+
+servers:
+  - url: http://localhost:8080/gestion-stock/api
+
+tags:
+  - name: role-controller
+    description: Role specific data.
+  - name: user-controller
+    description: User specific data.
+  - name: product-controller
+    description: Product specific data.
+
+paths:
+
+  ##############
+  ## API Role ##
+  ##############
+
+  /roles:
+    #$ref: '../components/api/roles.yml#/paths/~1roles'
+    get:
+      tags:
+        - role-controller
+      summary: List of the roles.
+      operationId: getAppRoles
+      parameters:
+        - $ref: '#/components/parameters/currentPageParam'
+        - $ref: '#/components/parameters/sizePageParam'
+      responses:
+        200:
+          description: SUCCESS
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AppRoleDto'
+        204:
+          $ref: '#/components/responses/NoContent'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+    post:
+      tags:
+        - role-controller
+      summary: Create a role.
+      operationId: createAppRole
+      requestBody:
+        $ref: '#/components/requestBodies/RoleBody'
+      responses:
+        201:
+          $ref: '#/components/responses/roleCreatedResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+
+  /roles/{id}:
+    #$ref: '../components/api/roles.yml#/paths/~1role'
+    # Parametre partagé...
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+          format: int32
+        required: true
+        description: The given role ID
+    get:
+      tags:
+        - role-controller
+      summary: Get a role by the given id.
+      operationId: getAppRole
+      responses:
+        200:
+          $ref: '#/components/responses/GetRoleOkResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+    put:
+      tags:
+        - role-controller
+      summary: Update a role by the given id.
+      operationId: updateAppRole
+      requestBody:
+        $ref: '#/components/requestBodies/RoleBody'
+      responses:
+        200:
+          $ref: '#/components/responses/Ok'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+    delete:
+      tags:
+        - role-controller
+      summary: Delete a role by the given id.
+      operationId: deleteAppRole
+      responses:
+        204:
+          $ref: '#/components/responses/NoContent'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+
+  ##############
+  ## API User ##
+  ##############
+
+  /users:
+    #$ref: '../components/api/users.yml#/paths/~1users'
+    get:
+      tags:
+        - user-controller
+      summary: List of users.
+      operationId: getAppUsers
+      parameters:
+        - $ref: '#/components/parameters/currentPageParam'
+        - $ref: '#/components/parameters/sizePageParam'
+      responses:
+        200:
+          description: SUCCESS
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AppUserDto'
+        204:
+          $ref: '#/components/responses/NoContent'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+    post:
+      tags:
+        - user-controller
+      summary: Create a user.
+      operationId: createAppUser
+      requestBody:
+        $ref: '#/components/requestBodies/UserBody'
+      responses:
+        201:
+          $ref: '#/components/responses/userCreatedResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+
+  /users/{id}:
+    #$ref: '../components/api/users.yml#/paths/~1user'
+    #Paramettre partagé pour tout les méthodes sous le path /users/{id}
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+          format: int32
+        required: true
+        description: The given user ID
+    get:
+      tags:
+        - user-controller
+      summary: Get a user by the given id.
+      operationId: getAppUser
+      responses:
+        200:
+          $ref: '#/components/responses/GetUserOkResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+    put:
+      tags:
+        - user-controller
+      summary: Update a user by the given id.
+      operationId: updateAppUser
+      requestBody:
+        $ref: '#/components/requestBodies/UserBody'
+      responses:
+        200:
+          $ref: '#/components/responses/GetUserOkResponse'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+    delete:
+      tags:
+        - user-controller
+      summary: Delete a user by the given id.
+      operationId: deleteAppUser
+      responses:
+        204:
+          $ref: '#/components/responses/NoContent'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        5XX:
+          $ref: '#/components/responses/ServerError'
+
+components:
+  #Définition globals des models (DTO)
+  schemas:
+    AppRoleDto:
+      $ref: '../components/model/roles/AppRoleDto.yaml'
+    AppUserDto:
+      $ref: '../components/model/users/AppUserDto.yaml'
+    AppProduitDto:
+      $ref: '../components/model/produits/AppProduitDto.yaml'
+  #Définition globals des parameters pour réutilisation
+  parameters:
+    currentPageParam:
+      name: currentPage
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int32
+        minimum: 0
+        default: 0
+    sizePageParam:
+      name: sizePage
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int32
+        default: 5
+        minimum: 5
+        maximum: 100
+  #Définition globals des responses pour réutilisation
+  responses:
+    GetRoleOkResponse:
+      description: Ok
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/AppRoleDto'
+    GetUserOkResponse:
+      description: Ok
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/AppUserDto'
+    roleCreatedResponse:
+      description: Role crée avec succès.
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/AppRoleDto'
+    userCreatedResponse:
+      description: User crée avec succès.
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/AppUserDto'
+    Ok:
+      description: OK
+    Created:
+      description: The resource was created successfully.
+    NoContent:
+      description: The resource was deleted successfully.
+    NotFound:
+      description: NOT FOUND
+    Unauthorized:
+      description: Unauthorized
+    BadRequest:
+      description: BAD REQUEST
+    ServerError:
+      description: Unexpected error.
+  #Définition globals de quelques requestBodies...
+  requestBodies:
+    RoleBody:
+      description: A role model request body...
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AppRoleDto'
+    UserBody:
+      description: A user model request body...
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AppUserDto'
