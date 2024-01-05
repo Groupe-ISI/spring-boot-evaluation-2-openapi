@@ -18505,3 +18505,378 @@
   "threadPriority" : 5,
   "service" : "admin-app-openapi"
 }
+{
+  "instant" : {
+    "epochSecond" : 1704480502,
+    "nanoOfSecond" : 481289900
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.test.context.support.AnnotationConfigContextLoaderUtils",
+  "message" : "Could not detect default configuration classes for test class [com.groupeisi.adminapp.AdminAppApplicationTests]: AdminAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480502,
+    "nanoOfSecond" : 687052400
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.test.context.SpringBootTestContextBootstrapper",
+  "message" : "Found @SpringBootConfiguration com.groupeisi.adminapp.AdminAppApplication for test class com.groupeisi.adminapp.AdminAppApplicationTests",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480502,
+    "nanoOfSecond" : 919306500
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.devtools.restart.RestartApplicationListener",
+  "message" : "Restart disabled due to context in which it is running",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480503,
+    "nanoOfSecond" : 213630100
+  },
+  "thread" : "background-preinit",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.validator.internal.util.Version",
+  "message" : "HV000001: Hibernate Validator 8.0.1.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.validator.internal.util.logging.Log_$logger",
+  "threadId" : 21,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480503,
+    "nanoOfSecond" : 245465500
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.groupeisi.adminapp.AdminAppApplicationTests",
+  "message" : "Starting AdminAppApplicationTests using Java 17.0.9 with PID 25756 (started by HP in C:\\Users\\HP\\Me\\M2GL-2023-2024\\JEE\\Projets\\spring-boot-evaluation-2-openapi\\admin-app-openapi)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480503,
+    "nanoOfSecond" : 251886100
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.groupeisi.adminapp.AdminAppApplicationTests",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480504,
+    "nanoOfSecond" : 328674800
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480504,
+    "nanoOfSecond" : 410467300
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480505,
+    "nanoOfSecond" : 197277400
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [name: default]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.EntityManagerMessageLogger_$logger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480505,
+    "nanoOfSecond" : 295221400
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate ORM core version 6.3.1.Final",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480505,
+    "nanoOfSecond" : 356725200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "HHH000026: Second-level cache disabled",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480505,
+    "nanoOfSecond" : 795746400
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "message" : "No LoadTimeWeaver setup: ignoring JPA class transformer",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480505,
+    "nanoOfSecond" : 841061400
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480506,
+    "nanoOfSecond" : 460939700
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cb58e8b",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480506,
+    "nanoOfSecond" : 465154700
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480507,
+    "nanoOfSecond" : 850277200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "message" : "HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.hibernate.internal.CoreMessageLogger_$logger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480508,
+    "nanoOfSecond" : 89900200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480508,
+    "nanoOfSecond" : 968208300
+  },
+  "thread" : "main",
+  "level" : "WARN",
+  "loggerName" : "org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration",
+  "message" : "spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480509,
+    "nanoOfSecond" : 349189400
+  },
+  "thread" : "main",
+  "level" : "WARN",
+  "loggerName" : "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration",
+  "message" : "Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480509,
+    "nanoOfSecond" : 535085500
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.groupeisi.adminapp.AdminAppApplicationTests",
+  "message" : "Started AdminAppApplicationTests in 6.633 seconds (process running for 8.531)",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480510,
+    "nanoOfSecond" : 235687900
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.test.context.support.AnnotationConfigContextLoaderUtils",
+  "message" : "Could not detect default configuration classes for test class [com.groupeisi.adminapp.service.AppRolesServiceTest]: AppRolesServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480510,
+    "nanoOfSecond" : 259001200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.boot.test.context.SpringBootTestContextBootstrapper",
+  "message" : "Found @SpringBootConfiguration com.groupeisi.adminapp.AdminAppApplication for test class com.groupeisi.adminapp.service.AppRolesServiceTest",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480510,
+    "nanoOfSecond" : 598772600
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Closing JPA EntityManagerFactory for persistence unit 'default'",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.commons.logging.LogAdapter$Log4jLog",
+  "threadId" : 20,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480510,
+    "nanoOfSecond" : 601998400
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown initiated...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 20,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}
+{
+  "instant" : {
+    "epochSecond" : 1704480510,
+    "nanoOfSecond" : 632036800
+  },
+  "thread" : "SpringApplicationShutdownHook",
+  "level" : "INFO",
+  "loggerName" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Shutdown completed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.slf4j.Log4jLogger",
+  "threadId" : 20,
+  "threadPriority" : 5,
+  "service" : "admin-app-openapi"
+}

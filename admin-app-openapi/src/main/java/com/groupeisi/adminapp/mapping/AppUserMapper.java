@@ -1,7 +1,7 @@
 package com.groupeisi.adminapp.mapping;
 
-import com.groupeisi.adminapp.dto.AppUserDto;
 import com.groupeisi.adminapp.entities.AppUser;
+import com.groupeisi.generated.model.AppUserDto;
 import org.mapstruct.Mapper;
 
 @Mapper

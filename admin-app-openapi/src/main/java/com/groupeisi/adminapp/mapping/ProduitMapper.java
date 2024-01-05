@@ -1,12 +1,12 @@
 package com.groupeisi.adminapp.mapping;
 
-import com.groupeisi.adminapp.dto.ProduitDto;
 import com.groupeisi.adminapp.entities.Produit;
+import com.groupeisi.generated.model.AppProduitDto;
 import org.mapstruct.Mapper;
 
 @Mapper
 public interface ProduitMapper {
-    Produit toProduit(ProduitDto produitDto);
+    Produit toProduit(AppProduitDto produitDto);
 
-    ProduitDto toProduitDto(Produit produit);
+    AppProduitDto toProduitDto(Produit produit);
 }

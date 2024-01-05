@@ -106,7 +106,7 @@ paths:
         $ref: '#/components/requestBodies/RoleBody'
       responses:
         200:
-          $ref: '#/components/responses/Ok'
+          $ref: '#/components/responses/GetRoleOkResponse'
         400:
           $ref: '#/components/responses/BadRequest'
         401:

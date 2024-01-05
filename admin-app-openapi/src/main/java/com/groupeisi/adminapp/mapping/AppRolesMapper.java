@@ -1,12 +1,12 @@
 package com.groupeisi.adminapp.mapping;
 
-import com.groupeisi.adminapp.dto.AppRolesDto;
 import com.groupeisi.adminapp.entities.AppRoles;
+import com.groupeisi.generated.model.AppRoleDto;
 import org.mapstruct.Mapper;
 
 @Mapper
 public interface AppRolesMapper {
-    AppRoles toAppRoles(AppRolesDto appRolesDto);
+    AppRoles toAppRoles(AppRoleDto appRolesDto);
 
-    AppRolesDto toAppRolesDto(AppRoles appRoles);
+    AppRoleDto toAppRolesDto(AppRoles appRoles);
 }

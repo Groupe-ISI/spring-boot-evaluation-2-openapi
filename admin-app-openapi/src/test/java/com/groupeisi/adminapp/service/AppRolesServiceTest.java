@@ -1,6 +1,6 @@
 package com.groupeisi.adminapp.service;
 
-import com.groupeisi.adminapp.dto.AppRolesDto;
+import com.groupeisi.generated.model.AppRoleDto;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -29,7 +29,7 @@ class AppRolesServiceTest {
 
     @Test
     void getAppRoles() {
-        List<AppRolesDto> appRolesDtos = appRolesService.getAppRoles();
+        List<AppRoleDto> appRoleDtos = appRolesService.getAppRoles(0, 5);
         Assertions.assertTrue(true);
     }
 
