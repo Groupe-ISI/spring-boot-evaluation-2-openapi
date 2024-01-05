@@ -74,10 +74,10 @@ paths:
     put:
       tags:
         - user-controller
-      summary: Update a role by the given id.
-      operationId: updateAppRole
+      summary: Update a user by the given id.
+      operationId: updateAppUser
       requestBody:
-        $ref: '../../interfaces/global-api.yml#/components/requestBodies/RoleBody'
+        $ref: '../../interfaces/global-api.yml#/components/requestBodies/UserBody'
       responses:
         200:
           $ref: '../../interfaces/global-api.yml#/components/responses/GetUserOkResponse'
@@ -91,9 +91,9 @@ paths:
           $ref: '../../interfaces/global-api.yml#/components/responses/ServerError'
     delete:
       tags:
-        - role-controller
-      summary: Delete a role by the given id.
-      operationId: deleteAppRole
+        - user-controller
+      summary: Delete a user by the given id.
+      operationId: deleteAppUser
       responses:
         204:
           $ref: '../../interfaces/global-api.yml#/components/responses/NoContent'
